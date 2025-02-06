@@ -4,7 +4,7 @@
  * Plugin Name: Move Content Updated Link
  * Description: Moves the "Content Updated" link in the Gutenberg editor to the top right for better visibility.
  * Plugin URI:  https://github.com/robertdevore/move-content-updated-link/
- * Version:     1.0.0
+ * Version:     1.0.1
  * Author:      Robert DeVore
  * Author URI:  https://robertdevore.com/
  * License:     GPL-2.0+
