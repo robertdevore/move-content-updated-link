@@ -29,6 +29,21 @@ $myUpdateChecker = PucFactory::buildUpdateChecker(
 $myUpdateChecker->setBranch( 'main' );
 
 /**
+ * Load plugin text domain for translations
+ * 
+ * @since  1.0.1
+ * @return void
+ */
+function mcul_load_textdomain() {
+    load_plugin_textdomain( 
+        'move-content-updated-link',
+        false,
+        dirname( plugin_basename( __FILE__ ) ) . '/languages/'
+    );
+}
+add_action( 'plugins_loaded', 'mcul_load_textdomain' );
+
+/**
  * Enqueue custom CSS for moving the "Content Updated" link.
  *
  * @since  1.0.0
